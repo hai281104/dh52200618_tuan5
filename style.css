@@ -1,59 +1,59 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    margin: 0;
-    padding: 0;
-}
-
-.container {
-    width: 80%;
-    margin: 0 auto;
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-h1 {
-    color: #444;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-table {
+/* Căn giữa bảng chứa form */
+.center-table {
     width: 100%;
-    margin-bottom: 20px;
-    border-collapse: collapse;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-th, td {
-    padding: 10px;
-    border: 1px solid #ddd;
-    text-align: left;
+/* Thiết kế form */
+form {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    background: #f9f9f9;
 }
 
-th {
-    background-color: #f8f8f8;
+/* Nhãn và input */
+label {
     font-weight: bold;
 }
 
-input[type="text"], textarea {
+/* Input, select và textarea */
+input[type="text"],
+input[type="file"],
+input[type="color"],
+select,
+textarea {
     width: 100%;
     padding: 8px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+    margin: 5px 0;
     box-sizing: border-box;
 }
 
-textarea {
-    height: 100px;
-    resize: vertical;
+/* Checkbox */
+input[type="checkbox"] {
+    margin-right: 5px;
 }
 
-.color-box {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background-color: #333; /* Màu sắc có thể thay đổi */
-    border: 1px solid #000;
+/* Nút bấm */
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Hover cho nút bấm */
+button:hover {
+    background-color: #45a049;
+}
+
+/* Kích thước input màu */
+input[type="color"] {
+    height: 40px;
 }
