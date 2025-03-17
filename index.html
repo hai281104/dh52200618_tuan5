@@ -1,81 +1,116 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thêm Sản Phẩm Mới</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="container">
-        <h1>THÊM SẢN PHẨM MỚI</h1>
+    <table class="center-table">
+        <tr>
+            <td>
+                <h2>THÊM SẢN PHẨM MỚI</h2>
+                <form action="#" method="post" enctype="multipart/form-data">
+                    <table>
+                        <tr>
+                            <td><label for="ma-san-pham">Mã sản phẩm</label></td>
+                            <td><input type="text" id="ma-san-pham" name="ma-san-pham" value="49181802"></td>
+                        </tr>
 
-        <table class="product-table">
-            <tr>
-                <th colspan="2">Mã sản phẩm</th>
-            </tr>
-            <tr>
-                <td><strong>Tên sản phẩm:</strong></td>
-                <td><input type="text" placeholder="Nhập tên sản phẩm"></td>
-            </tr>
-            <tr>
-                <td><strong>Hình ảnh:</strong></td>
-                <td><input type="text" placeholder="Chọn tệp _1.jpg"></td>
-            </tr>
-            <tr>
-                <td><strong>Hãng sản xuất:</strong></td>
-                <td><input type="text" placeholder="Nhập hãng sản xuất"></td>
-            </tr>
-        </table>
+                        <tr>
+                            <td><label for="ten-san-pham">Tên sản phẩm</label></td>
+                            <td><input type="text" id="ten-san-pham" name="ten-san-pham" value="Oxford Advanced Learn"></td>
+                        </tr>
 
-        <table class="details-table">
-            <tr>
-                <th colspan="2">Kích thước</th>
-            </tr>
-            <tr>
-                <td><strong>Số trang:</strong></td>
-                <td><input type="text" placeholder="Nhập số trang"></td>
-            </tr>
-            <tr>
-                <td><strong>Tác giả:</strong></td>
-                <td><input type="text" placeholder="Nhập tác giả"></td>
-            </tr>
-            <tr>
-                <td><strong>Giá:</strong></td>
-                <td><input type="text" placeholder="Nhập giá"></td>
-            </tr>
-            <tr>
-                <td><strong>Xuất xứ:</strong></td>
-                <td><input type="text" placeholder="Nhập xuất xứ"></td>
-            </tr>
-            <tr>
-                <td><strong>Thể Loại:</strong></td>
-                <td><input type="text" placeholder="Nhập thể loại"></td>
-            </tr>
-        </table>
+                        <tr>
+                            <td><label for="hinh-anh">Hình ảnh</label></td>
+                            <td><input type="file" id="hinh-anh" name="hinh-anh"></td>
+                        </tr>
 
-        <table class="additional-info-table">
-            <tr>
-                <th colspan="2">Hồi: 300</th>
-            </tr>
-            <tr>
-                <td><strong>Trang:</strong></td>
-                <td><input type="text" placeholder="Nhập số trang"></td>
-            </tr>
-            <tr>
-                <td><strong>Màu:</strong></td>
-                <td><span class="color-box"></span></td>
-            </tr>
-        </table>
+                        <tr>
+                            <td><label for="hang-san-xuat">Hãng sản xuất</label></td>
+                            <td>
+                                <select id="hang-san-xuat" name="hang-san-xuat">
+                                    <option>Thiên Long</option>
+                                </select>
+                            </td>
+                        </tr>
 
-        <table class="description-table">
-            <tr>
-                <th>Mô tả chi tiết</th>
-            </tr>
-            <tr>
-                <td><textarea placeholder="Nhập mô tả chi tiết"></textarea></td>
-            </tr>
-        </table>
-    </div>
+                        <tr>
+                            <td><label for="kich-thuoc">Kích thước</label></td>
+                            <td>
+                                <input type="text" id="kich-thuoc-w" name="kich-thuoc-w" value="200"> mm
+                                <input type="text" id="kich-thuoc-h" name="kich-thuoc-h" value="300"> mm
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="so-trang">Số trang</label></td>
+                            <td><input type="text" id="so-trang" name="so-trang" value="1200"> trang</td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="tac-gia">Tác giả</label></td>
+                            <td><input type="text" id="tac-gia" name="tac-gia" value="English Corpus"></td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="gia">Giá</label></td>
+                            <td><input type="text" id="gia" name="gia" value="517.000"></td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="mau">Màu</label></td>
+                            <td><input type="color" id="mau" name="mau" value="#000000"></td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="xuat-xu">Xuất xứ</label></td>
+                            <td><input type="text" id="xuat-xu" name="xuat-xu" value="Không có"></td>
+                        </tr>
+
+                        <tr>
+                            <td><label>Thể loại</label></td>
+                            <td>
+                                <input type="checkbox" id="van-hoc" name="the-loai" value="VanHoc">
+                                <label for="van-hoc">Văn học</label>
+
+                                <input type="checkbox" id="kinh-te" name="the-loai" value="KinhTe">
+                                <label for="kinh-te">Kinh tế</label>
+
+                                <input type="checkbox" id="tam-ly" name="the-loai" value="TamLy">
+                                <label for="tam-ly">Tâm lý</label>
+
+                                <input type="checkbox" id="thieu-nhi" name="the-loai" value="ThieuNhi">
+                                <label for="thieu-nhi">Thiếu nhi</label>
+
+                                <input type="checkbox" id="giao-khoa" name="the-loai" value="GiaoKhoa">
+                                <label for="giao-khoa">Giáo khoa</label>
+
+                                <input type="checkbox" id="ngoai-ngu" name="the-loai" value="NgoaiNgu" checked>
+                                <label for="ngoai-ngu">Ngoại ngữ</label>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="mo-ta">Mô tả chi tiết</label></td>
+                            <td>
+                                <textarea id="mo-ta" name="mo-ta" rows="4">Paperback - 10th Edition (With 1 Year's Access To Both Premium Online And App)</textarea>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2">
+                                <button type="submit">Lưu Sản Phẩm</button>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </td>
+        </tr>
+    </table>
 </body>
+
 </html>
