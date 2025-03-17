@@ -1,59 +1,11 @@
-/* Căn giữa bảng chứa form */
-.center-table {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.A{
+    height: 30px;
+    
 }
-
-/* Thiết kế form */
-form {
-    border: 1px solid #ccc;
-    padding: 20px;
-    border-radius: 8px;
-    background: #f9f9f9;
+textarea{
+    height: 150px;
+    width: 300px;
 }
-
-/* Nhãn và input */
-label {
-    font-weight: bold;
-}
-
-/* Input, select và textarea */
-input[type="text"],
-input[type="file"],
-input[type="color"],
-select,
-textarea {
-    width: 100%;
-    padding: 8px;
-    margin: 5px 0;
-    box-sizing: border-box;
-}
-
-/* Checkbox */
-input[type="checkbox"] {
-    margin-right: 5px;
-}
-
-/* Nút bấm */
-button {
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100%;
-}
-
-/* Hover cho nút bấm */
-button:hover {
-    background-color: #45a049;
-}
-
-/* Kích thước input màu */
-input[type="color"] {
-    height: 40px;
+#image{
+    background-color:rgb(238, 235, 235);
 }
